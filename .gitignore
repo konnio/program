@@ -1,0 +1,5 @@
+# Ignoruj pliki wykonywalne
+# Można listować lub nazwę w formie maski
+# program1.o
+# program2.o
+*.o
