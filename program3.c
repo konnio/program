@@ -13,7 +13,7 @@ return a+b;
 int main(void)
 {
 	int a = 2, b = 5;  /* deklaracja typu zmiennej i inicjalizacja wartosci */	
-	char wybor = '*';  /* okreslenie wartosci stalej wybor jako "*" */	
+	char wybor = '+';  /* okreslenie wartosci stalej wybor jako "*" */	
 
 	/* if (wyrazenie) {blok jezeli wyrazenie prawdziwe}
 	   else {blok jezeli wyrazenie galszywe}; */
