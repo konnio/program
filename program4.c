@@ -26,10 +26,12 @@ return a / b;
 
 int main(void)
 {
-	int a = 2, b = 5;  /* deklaracja typu zmiennej i inicjalizacja wartosci */	
+	int a, b;  /* deklaracja typu zmiennej  */	
 	char wybor; /* okreslenie wartosci stalej wybor jako "*" */	
 	
-	scanf("%c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
+	printf("Podaj wartosc zmiennej a: "); scanf("%i", &a); //fflush(stdin);
+	printf("Podaj wartosc zmiennej b: "); scanf("%i", &b); //fflush(stdin);
+	printf("Podaj znak działania ktore chcesz wykonac: "); scanf("\n%c", &wybor); // fflush(stdin);/* czytaj z konsoli i zapisz pod wybor */
 	
 	/* if (wyrazenie) {blok jezeli wyrazenie prawdziwe}
 	   else {blok jezeli wyrazenie galszywe}; */
@@ -44,7 +46,7 @@ int main(void)
 	}else if (wybor == '/') {
 		podziel(a, b);
 	}else
-	puts("Wybrano niewlasciwy znak \n");
+	// puts("Wybrano niewlasciwy znak \n");
 	return 0;
 
 }
