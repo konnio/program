@@ -29,9 +29,10 @@ int main(void)
 	int a, b;  /* deklaracja typu zmiennej  */	
 	char wybor; /* okreslenie wartosci stalej wybor jako "*" */	
 	
-	printf("Podaj wartosc zmiennej a: "); scanf("%i", &a); //fflush(stdin);
-	printf("Podaj wartosc zmiennej b: "); scanf("%i", &b); //fflush(stdin);
-	printf("Podaj znak działania ktore chcesz wykonac: "); scanf("\n%c", &wybor); // fflush(stdin);/* czytaj z konsoli i zapisz pod wybor */
+	printf("Podaj znak działania ktore chcesz wykonac: "); scanf("%c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
+	printf("Podaj wartosc zmiennej a: "); scanf("%i", &a); 
+	printf("Podaj wartosc zmiennej b: "); scanf("%i", &b); 
+	//printf("Podaj znak działania ktore chcesz wykonac: "); scanf("\n%c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
 	
 	/* if (wyrazenie) {blok jezeli wyrazenie prawdziwe}
 	   else {blok jezeli wyrazenie galszywe}; */
