@@ -18,10 +18,13 @@ int main(void)
 	/* if (wyrazenie) {blok jezeli wyrazenie prawdziwe}
 	   else {blok jezeli wyrazenie galszywe}; */
 
-	if (wybor == '*'){ /* sprawdzana czy wybor jest * to nie jest '=' tylko '==' */
+	if (wybor == '*')
+	{ /* sprawdzana czy wybor jest * to nie jest '=' tylko '==' */
 		printf("Wynik mnozenia: %i\n", mnoz(a, b));
 
-		}else{
+	}
+		else
+	{
 
 		printf("wynik dodawania: %i\n", dodaj (a, b));
 	};		/* ten srednik jest opcjonalny jezeli jest klamra */

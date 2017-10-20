@@ -3,3 +3,4 @@
 # program1.o
 # program2.o
 *.o
+*.out
