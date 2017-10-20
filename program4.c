@@ -3,25 +3,25 @@
 int mnoz(int a, int b) /* funkcja mnozaca */
 {
 printf("Wynik mnozenia: %d\n", a * b);
-return 0;
+return a * b;
 }
 
 int dodaj(int a, int b) /*funkcja dodajaca 2 liczby */
 {
 printf("Wynik dodawania: %d\n", a + b);
-return 0;
+return a + b;
 }
 
 int odejmij (int a, int b) /* funkcja odejmująca b od a liczby */
 {
 printf("Wynik odejmowania: %d\n", a - b);
-return 0;
+return a - b;
 }
 
 int podziel (int a, int b) /* funkcja dzielaca a przez b */
 {
 printf("Wynik dzielenia: %d\n", a / b);
-return 0;
+return a / b;
 }
 
 int main(void)
@@ -44,7 +44,7 @@ int main(void)
 	}else if (wybor == '/') {
 		podziel(a, b);
 	}else
-	printf("Wybrano niewlasciwy znak");
+	puts("Wybrano niewlasciwy znak \n");
 	return 0;
 
 }
