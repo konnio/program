@@ -3,21 +3,25 @@
 int mnoz(int a, int b) /* funkcja mnozaca */
 {
 printf("Wynik mnozenia: %d\n", a * b);
+return 0;
 }
 
 int dodaj(int a, int b) /*funkcja dodajaca 2 liczby */
 {
 printf("Wynik dodawania: %d\n", a + b);
+return 0;
 }
 
 int odejmij (int a, int b) /* funkcja odejmująca b od a liczby */
 {
 printf("Wynik odejmowania: %d\n", a - b);
+return 0;
 }
 
 int podziel (int a, int b) /* funkcja dzielaca a przez b */
 {
-printf("Wynik dzielenia: %d\n", a \ b);
+printf("Wynik dzielenia: %d\n", a / b);
+return 0;
 }
 
 int main(void)
@@ -32,12 +36,15 @@ int main(void)
 
 	if (wybor == '*')
 	{ /* sprawdzana czy wybor jest * to nie jest '=' tylko '==' */
-		printf("Wynik mnozenia: %i\n", mnoz(a, b));
-
-	}else{
-
-		printf("wynik dodawania: %i\n", dodaj (a, b));
-	};		/* ten srednik jest opcjonalny jezeli jest klamra */
-
+		mnoz(a, b);
+	}else if (wybor == '+') {    /* wywoluje funkcje w zaleznosci od przyjetego z konsoli znaku */
+		dodaj(a, b);
+	}else if (wybor == '-') {
+		odejmij(a, b);
+	}else if (wybor == '/') {
+		podziel(a, b);
+	}else
+	printf("Wybrano niewlasciwy znak");
 	return 0;
+
 }
