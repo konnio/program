@@ -13,8 +13,10 @@ return a+b;
 int main(void)
 {
 	int a = 2, b = 5;  /* deklaracja typu zmiennej i inicjalizacja wartosci */	
-	char wybor = '+';  /* okreslenie wartosci stalej wybor jako "*" */	
-
+	char wybor; /* okreslenie wartosci stalej wybor jako "*" */	
+	
+	scanf("%c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
+	
 	/* if (wyrazenie) {blok jezeli wyrazenie prawdziwe}
 	   else {blok jezeli wyrazenie galszywe}; */
 
@@ -22,9 +24,7 @@ int main(void)
 	{ /* sprawdzana czy wybor jest * to nie jest '=' tylko '==' */
 		printf("Wynik mnozenia: %i\n", mnoz(a, b));
 
-	}
-		else
-	{
+	}else{
 
 		printf("wynik dodawania: %i\n", dodaj (a, b));
 	};		/* ten srednik jest opcjonalny jezeli jest klamra */
