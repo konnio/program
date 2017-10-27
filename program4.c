@@ -49,14 +49,14 @@ int main(void)
 	int czy_dalej = 1; /* przypisanie wartosci 1 do licznika do petli while */
 	
 	while(czy_dalej == 1){
-	printf("Podaj wartosc zmiennej a: "); scanf("%i", &a); 
-	printf("Podaj wartosc zmiennej b: "); scanf("%i", &b); 
-	printf("Podaj znak działania ktore chcesz wykonac: "); scanf(" %c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
+		printf("Podaj wartosc zmiennej a: "); scanf("%i", &a); 
+		printf("Podaj wartosc zmiennej b: "); scanf("%i", &b); 
+		printf("Podaj znak działania ktore chcesz wykonac: (+ - * /) "); scanf(" %c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
 										     /* wpisanie znaku spacji przed %c zlikwidowalo blad */
-	licz(a, b, wybor);
+		licz(a, b, wybor);
 
-	printf("Czy dalej chcesz liczyc? (1 - tak / 0 - nie) \n");
-	scanf("%d", &czy_dalej);
+		printf("Czy dalej chcesz liczyc? (1 - tak / 0 - nie) \n");
+		scanf("%d", &czy_dalej);
 	}
 	return 0;
 
