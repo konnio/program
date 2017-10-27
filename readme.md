@@ -1,12 +1,14 @@
+# NOTATKA Z WYKLADU NR 2 - Program kalkulator
+
+## 1. Napisanie funkcji wykonujacej podstawowe dzialania arytmetyczne
 ```c
 #include <stdio.h> 
-
 int mnoz(int a, int b) /* funkcja mnozaca */
 {
 printf("Wynik mnozenia: %d\n", a * b);
 return a * b;
 }
-```
+
 int dodaj(int a, int b) /*funkcja dodajaca 2 liczby */
 {
 printf("Wynik dodawania: %d\n", a + b);
@@ -24,7 +26,9 @@ int podziel (int a, int b) /* funkcja dzielaca a przez b */
 printf("Wynik dzielenia: %i i reszta: %i\n", a / b, a % b); /* znak % to reszta z dzielenia a przez b */
 return a / b;
 }
-
+```
+## 2. Napisanie funkcji, ktora na podstawie wybranego znaku wywoluje odpowiednia funkcje
+```c
 int licz(int a, int b, char wybor){
 	if (wybor == '*')
 	{ /* sprawdzana czy wybor jest * to nie jest '=' tylko '==' */
@@ -41,7 +45,7 @@ int licz(int a, int b, char wybor){
 	}
 	return 1;
 }
-
+```
 
 int main(void)
 {
