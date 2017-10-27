@@ -27,7 +27,7 @@ printf("Wynik dzielenia: %i i reszta: %i\n", a / b, a % b); /* znak % to reszta 
 return a / b;
 }
 ```
-## 2. Napisanie funkcji, ktora na podstawie wybranego znaku wywoluje odpowiednia funkcje - instrukcje `f` oraz `else`
+## 2. Napisanie funkcji, ktora na podstawie wybranego znaku wywoluje odpowiednia funkcje - instrukcje `if` oraz `else`
 ```c
 int licz(int a, int b, char wybor){
 	if (wybor == '*')
