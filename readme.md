@@ -27,7 +27,7 @@ printf("Wynik dzielenia: %i i reszta: %i\n", a / b, a % b); /* znak % to reszta 
 return a / b;
 }
 ```
-## 2. Napisanie funkcji, ktora na podstawie wybranego znaku wywoluje odpowiednia funkcje
+## 2. Napisanie funkcji, ktora na podstawie wybranego znaku wywoluje odpowiednia funkcje - instrukcje 'if' oraz 'else'
 ```c
 int licz(int a, int b, char wybor){
 	if (wybor == '*')
@@ -46,7 +46,8 @@ int licz(int a, int b, char wybor){
 	return 1;
 }
 ```
-
+## 3. Napisanie funkcji glownej ktora pobiera zmienne z klawiatury i wykonuje program do momentu podania przez uzytkownika wartosci 0
+```c
 int main(void)
 {
 	int a, b;  /* deklaracja typu zmiennej  */	
@@ -64,5 +65,5 @@ int main(void)
 		scanf("%d", &czy_dalej);
 	}
 	return 0;
-
 }
+```
