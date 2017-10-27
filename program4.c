@@ -34,12 +34,12 @@ int licz(int a, int b, char wybor){
 		odejmij(a, b);
 	}else if (wybor == '/') {
 		podziel(a, b);
-	}else
+	}else{
 	// puts("Wybrano niewlasciwy znak \n");
 	return 0;
 	}
 	return 1;
-
+}
 
 
 int main(void)
@@ -56,7 +56,7 @@ int main(void)
 	licz(a, b, wybor);
 
 	printf("Czy dalej chcesz liczyc? (1 - tak / 0 - nie) \n");
-	scanf("$d", &czy_dalej);
+	scanf("%d", &czy_dalej);
 	}
 	return 0;
 
