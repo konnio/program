@@ -1,4 +1,4 @@
-````c
+```c
 #include <stdio.h> 
 
 int mnoz(int a, int b) /* funkcja mnozaca */
