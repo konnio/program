@@ -1,3 +1,4 @@
+````c
 #include <stdio.h> 
 
 int mnoz(int a, int b) /* funkcja mnozaca */
@@ -5,7 +6,7 @@ int mnoz(int a, int b) /* funkcja mnozaca */
 printf("Wynik mnozenia: %d\n", a * b);
 return a * b;
 }
-
+```
 int dodaj(int a, int b) /*funkcja dodajaca 2 liczby */
 {
 printf("Wynik dodawania: %d\n", a + b);
