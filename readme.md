@@ -67,3 +67,7 @@ int main(void)
 	return 0;
 }
 ```
+## 4. Kompilacja i uruchomienie programu
+
+- *gcc nazwa_pliku.c -o nazwa_programu.o* 	- uruchamia kompilator jezyka C
+- *./nazwa_programu.o* 				- uruchamia skompilowany program
