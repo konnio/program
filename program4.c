@@ -20,7 +20,7 @@ return a - b;
 
 int podziel (int a, int b) /* funkcja dzielaca a przez b */
 {
-printf("Wynik dzielenia: %i\n i reszta: %i\n", a / b, a % b); /* znak % to reszta z dzielenia a przez b */
+printf("Wynik dzielenia: %i i reszta: %i\n", a / b, a % b); /* znak % to reszta z dzielenia a przez b */
 return a / b;
 }
 
