@@ -20,23 +20,11 @@ return a - b;
 
 int podziel (int a, int b) /* funkcja dzielaca a przez b */
 {
-printf("Wynik dzielenia: %d\n", a / b);
+printf("Wynik dzielenia: %i\n i reszta: %i\n", a / b, a % b); /* znak % to reszta z dzielenia a przez b */
 return a / b;
 }
 
-int main(void)
-{
-	int a, b;  /* deklaracja typu zmiennej  */	
-	char wybor; /* okreslenie wartosci stalej wybor jako "*" */	
-	
-	//printf("Podaj znak działania ktore chcesz wykonac: "); scanf("%c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
-	printf("Podaj wartosc zmiennej a: "); scanf("%i", &a); 
-	printf("Podaj wartosc zmiennej b: "); scanf("%i", &b); 
-	printf("Podaj znak działania ktore chcesz wykonac: "); scanf(" %c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
-	
-	/* if (wyrazenie) {blok jezeli wyrazenie prawdziwe}
-	   else {blok jezeli wyrazenie galszywe}; */
-
+int licz(int a, int b, char wybor){
 	if (wybor == '*')
 	{ /* sprawdzana czy wybor jest * to nie jest '=' tylko '==' */
 		mnoz(a, b);
@@ -48,6 +36,28 @@ int main(void)
 		podziel(a, b);
 	}else
 	// puts("Wybrano niewlasciwy znak \n");
+	return 0;
+	}
+	return 1;
+
+
+
+int main(void)
+{
+	int a, b;  /* deklaracja typu zmiennej  */	
+	char wybor; /* okreslenie wartosci stalej wybor jako "*" */	
+	int czy_dalej = 1; /* przypisanie wartosci 1 do licznika do petli while */
+	
+	while(czy_dalej == 1){
+	printf("Podaj wartosc zmiennej a: "); scanf("%i", &a); 
+	printf("Podaj wartosc zmiennej b: "); scanf("%i", &b); 
+	printf("Podaj znak działania ktore chcesz wykonac: "); scanf(" %c", &wybor); /* czytaj z konsoli i zapisz pod wybor */
+										     /* wpisanie znaku spacji przed %c zlikwidowalo blad */
+	licz(a, b, wybor);
+
+	printf("Czy dalej chcesz liczyc? (1 - tak / 0 - nie) \n");
+	scanf("$d", &czy_dalej);
+	}
 	return 0;
 
 }
